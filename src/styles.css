@@ -182,6 +182,10 @@
   .loading-text {
     color: white;
   }
+
+  .not-found {
+    color: white;
+  }
   
   @media screen and (max-width: 400px) {
     .search-buttons {

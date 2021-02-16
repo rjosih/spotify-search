@@ -57,9 +57,6 @@ const SearchForm = (props) => {
     <div>
       <form>
         <div className={classes.search}>
-            {/* <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div> */}
             <figure>
               <img src={spotifyLogo} alt={'spotify-logo'} width="60" height="60"/>
             </figure>

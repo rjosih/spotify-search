@@ -4,13 +4,13 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
 import spotifyLogo from '../images/spotify.png'
+const {
+  REACT_APP_CLIENT_ID,
+  REACT_APP_AUTHORIZE_URL,
+  REACT_APP_REDIRECT_URL
+} = process.env
 
 const Home = (props) => {
-  const {
-    REACT_APP_CLIENT_ID,
-    REACT_APP_AUTHORIZE_URL,
-    REACT_APP_REDIRECT_URL
-  } = process.env
 
   const handleLogin = () => {
     window.location = `${REACT_APP_AUTHORIZE_URL}?client_id=${REACT_APP_CLIENT_ID}&redirect_uri=${REACT_APP_REDIRECT_URL}&response_type=token&show_dialog=true`;
@@ -23,7 +23,7 @@ const Home = (props) => {
   return (
     <div>
       {isValidSession() ? (
-        <Redirect to='/dashboard' />
+        <Redirect to='/search' />
       ) : (
         <div className='login'>
           {sessionExpired && (

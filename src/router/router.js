@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from '../pages/Home'
 import RedirectPage from '../pages/RedirectPage'
-import Dashboard from '../pages/Dashboard'
+import Dashboard from '../pages/Search'
 import NotFoundPage from '../components/NotFoundPage'
 
 const Router = () => {
@@ -50,7 +50,7 @@ const Router = () => {
               )}
             />
             <Route
-              path='/dashboard'
+              path='/search'
               render={(props) => (
                 <Dashboard isValidSession={isValidSession} {...props} />
               )}
