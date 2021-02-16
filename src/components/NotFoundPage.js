@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const NotFoundPage = () => {
   return (
-    <div>
-      Page not found. Goto <Link to="/dashboard">Home Page</Link>
+    <div className='not-found'>
+      Page not found. Go <Link to='/search'>back</Link>
     </div>
   );
 };

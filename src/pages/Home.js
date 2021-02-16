@@ -4,13 +4,13 @@ import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
 import spotifyLogo from '../images/spotify.png'
+// const {
+//   REACT_APP_CLIENT_ID,
+//   REACT_APP_AUTHORIZE_URL,
+//   REACT_APP_REDIRECT_URL
+// } = process.env
 
 const Home = (props) => {
-  // const {
-  //   REACT_APP_CLIENT_ID,
-  //   REACT_APP_AUTHORIZE_URL,
-  //   REACT_APP_REDIRECT_URL
-  // } = process.env
 
   var REACT_APP_CLIENT_ID='fe8ef5c68ca741bdb4f4371bf8b5759a'
   var REACT_APP_AUTHORIZE_URL='https://accounts.spotify.com/authorize'
