@@ -12,7 +12,8 @@ As a logged in user to Spotify, I should be able to do a search and get back a l
 * A token sets in localstorage as verifier.
 * You are redirected to /search 
 * Search for a song, album, artist etc --> makes an api call with the verified token
-* Results are listed as albums. But you can choose artists and lists as well.
+* Response comes back and are being stored in the Redux store.
+* Results from Redux sture are listed as albums as default. You can choose artists and lists as well and it'll show their results.
 
 ## Techniques
 ### Front-end 
