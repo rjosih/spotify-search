@@ -1,2 +1,7 @@
-# spotify-search
-A React app that uses Spotify Search API 
+### `npm run build`
+
+
+### Test it
+`npm run build` fails to minify
+
+
