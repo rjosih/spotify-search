@@ -27,7 +27,7 @@ const Home = (props) => {
   return (
     <div>
       {isValidSession() ? (
-        <Redirect to='/dashboard' />
+        <Redirect to='/search' />
       ) : (
         <div className='login'>
           {sessionExpired && (
