@@ -7,7 +7,7 @@ This is a React app that uses Spotify's search API and lists a search result.
 As a logged in user to Spotify, I should be able to do a search and get back a list of results.
 
 ## Process
-
+![Process](https://i.imgur.com/grvd0By.png)
 * Log in to the application with your Spotify credentials. 
 * A token sets in localstorage as verifier.
 * You are redirected to /search 
