@@ -9,9 +9,10 @@ As a logged in user to Spotify, I should be able to do a search and get back a l
 ## Process
 
 * Log in to the application with your Spotify credentials. 
+* A token sets in localstorage as verifier.
 * You are redirected to /search 
-* Search for a song, album, artist etc.
-Results are listed as albums. But you can choose artists and lists as well.
+* Search for a song, album, artist etc --> makes an api call with the verified token
+* Results are listed as albums. But you can choose artists and lists as well.
 
 ## Techniques
 ### Front-end 
@@ -34,5 +35,15 @@ The project should start at https://localhost/3000
 
 ## Test it directly
 https://spotify-search-rjosih.herokuapp.com/
+
+## Thoughts 
+It's designed to match the current design of Spotify, to have a red thread through the API and Spotify's UI.
+
+## Future work
+Right now it's not perfect at all. Small design flaws. I have big plans and ideas for future work. 
+Examples: 
+* Play song in browser
+* Display the user with an avatar, the name
+* Possibility to log out
 
 
